@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dagger2demo">
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".daggerOne.case1.ParkingActivity"/>
+        <activity android:name=".daggerOne.case2.ParkingActivity"/>
+        <activity android:name=".daggerTwo.case1.ParkingActivity"/>
+        <activity android:name=".daggerTwo.case2.ParkingActivity"/>
+        <activity android:name=".daggerTwo.case3.ParkingActivity"/>
+        <activity android:name=".daggerThree.case1.ParkingActivity"/>
+        <activity android:name=".daggerThree.case2.LoginActivity"/>
+        <activity android:name=".daggerThree.case2.TestActivity"/>
+        <activity android:name=".daggerThree.case3.ParkingActivity"/>
+        <activity android:name=".daggerThree.case3.TestActivity"/>
+        <activity android:name=".daggerFour.case1.ChildActivity"/>
+        <activity android:name=".daggerFour.case2.ChildActivity"/>
+        <activity android:name=".daggerFour.case3.ChildActivity"/>
+    </application>
+
+</manifest>
